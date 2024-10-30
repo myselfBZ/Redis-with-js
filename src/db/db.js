@@ -1,6 +1,5 @@
 
 
-
 class DB {
     #data = {}
 
