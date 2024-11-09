@@ -1,15 +1,8 @@
-const net = require('net')
-
-const PORT = 8080 
-const HOST = '127.0.0.1'
-const opts = {
-    port:PORT,
-    host:HOST
-}
+import net from 'net'
 
 
-class Client{
-    
+
+export class Client{
     constructor(port, host){
         this.opts = {
             port:port,

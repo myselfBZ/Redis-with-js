@@ -1,6 +1,5 @@
 
-
-class DB {
+export class DB {
     #data = {}
 
     #commands = {
@@ -42,6 +41,3 @@ class DB {
     }
 }
 
-module.exports = {
-    DB
-}

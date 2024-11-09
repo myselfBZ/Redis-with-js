@@ -1,7 +1,8 @@
-const net = require('net');
-const { DB } = require('../db/db.js')
+import net from 'net'
 
-class Server{
+import { DB } from '../db/db.js'
+
+export class Server{
     constructor(addr, port) {
         this.port = port
         this.addr = addr 
@@ -36,9 +37,3 @@ class Server{
     }
 }
 
-const PORT = 8080;
-const HOST = '127.0.0.1';
-
-const server = new Server(HOST, PORT);
-
-server.start();
