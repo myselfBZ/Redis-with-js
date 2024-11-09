@@ -7,13 +7,7 @@ const opts = {
     host:HOST
 }
 
-const conn = () => { 
-    const client = net.createConnection(opts, ()=>{
-    client.write('set something somethingelse')
-    client.write('get something')
-})}
 
-/*
 class Client{
     
     constructor(port, host){
@@ -36,10 +30,7 @@ class Client{
         console.log(`we got something: ${data}`)
     }
 }
-*/
 
-for(let i = 0; i < 100; i++){
-    conn()
-}
+
 
 
