@@ -17,7 +17,7 @@ class Client{
         }
     }
 
-    letsgo(){
+    conn(){
         this.client = net.createConnection(this.opts, ()=>{
             this.client.write('set something firstKey')
             this.client.write('get something')
